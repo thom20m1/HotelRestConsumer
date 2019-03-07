@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HotelRestConsumer.Consumers;
 
 namespace HotelRestConsumer
 {
@@ -14,6 +15,9 @@ namespace HotelRestConsumer
         {
             HotelCode HotelCode = new HotelCode();
             HotelCode.DoTheStuff();
+
+
+
             KeepConsoleWindowOpen();
         }
         private static void KeepConsoleWindowOpen()

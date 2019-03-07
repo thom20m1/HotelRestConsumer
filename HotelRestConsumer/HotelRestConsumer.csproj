@@ -49,7 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InsertCodeHere.cs" />
+    <Compile Include="Consumers\BookingCode.cs" />
+    <Compile Include="Consumers\FacilityCode.cs" />
+    <Compile Include="Consumers\GuestCode.cs" />
+    <Compile Include="Consumers\HotelCode.cs" />
+    <Compile Include="Consumers\RoomCode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
