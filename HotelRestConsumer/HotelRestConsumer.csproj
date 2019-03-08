@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consumer.cs" />
     <Compile Include="Consumers\BookingCode.cs" />
     <Compile Include="Consumers\FacilityCode.cs" />
     <Compile Include="Consumers\GuestCode.cs" />

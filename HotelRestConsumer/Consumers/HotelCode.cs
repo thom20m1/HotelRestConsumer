@@ -21,18 +21,27 @@ namespace HotelRestConsumer.Consumers
                     Console.WriteLine($"Hotel:: {hotel}");
                 }
 
-                Console.WriteLine($"Hotel Nr #1: {GetOne(1)}");
+                //Console.WriteLine($"Hotel Nr #1: {GetOne(1)}");
 
-                Console.WriteLine("Forsøger at slætte Hotel #1337.");
-                Console.WriteLine($"Det lykkedes: {Delete(1337)}.");
+                //Console.WriteLine("Forsøger at slætte Hotel #1337.");
+                //Console.WriteLine($"Det lykkedes: {Delete(1337)}.");
 
-                Console.WriteLine("Opretter nyt hotelObjekt, ID findes.");
-                Console.WriteLine($"Lykkedes? : {Post(new Hotel(1, "SjussHus", "Strædevej 3", "28941323", "kontakt@mail.dk"))}");
-                Console.WriteLine("Opretter nyt hotel objekt, unikt ID.");
-                Console.WriteLine($"Lykkedes? : {Post(new Hotel(2, "D'Angleterre", "Kongens Nytorv 24", "28941324", "reception@brevpost.com"))}");
+                //Console.WriteLine("Opretter nyt hotelObjekt, ID findes.");
+                //Console.WriteLine($"Lykkedes? : {Post(new Hotel(1, "SjussHus", "Strædevej 3", "28941323", "kontakt@mail.dk"))}");
+                //Console.WriteLine("Opretter nyt hotel objekt, unikt ID.");
+                //Console.WriteLine($"Lykkedes? : {Post(new Hotel(2, "D'Angleterre", "Kongens Nytorv 24", "28941324", "reception@brevpost.com"))}");
+                //Console.WriteLine();
+                //Console.WriteLine($"Opdaterer nr 2. Det Lykkedes? {Put(2, new Hotel(2, "D'Angleterre", "Nordhavn nr 9", "28941324", "reception@brevpost.com"))}");
+                Console.WriteLine($"Opretter nyt Hotel. Success? : {Post(new Hotel(20,"StayCare","RoadWay 2","29021302","kontakt@mail.com"))}");
+                Console.WriteLine($"Opretter nyt Hotel. Success? : {Post(new Hotel(21, "Deluxe", "Hightown Place", "#33121392", "kontakt@mail.com"))}");
+                Console.WriteLine($"Opretter nyt Hotel. Success? : {Post(new Hotel(22, "Sunwing Resort", "Strandvejen 50", "37565456", "kontakt@mail.com"))}");
+                Console.WriteLine($"Opretter nyt Hotel. Success? : {Post(new Hotel(23, "Harry's Motel", "Ved afkørsel 420", "29021302", "kontakt@mail.com"))}");
+                Console.WriteLine($"Opretter nyt Hotel. Success? : {Post(new Hotel(24, "Cheapskie's B&B", "Cheapstreet 39", "40003000", "kontakt@mail.com"))}");
+
                 Console.WriteLine();
-                Console.WriteLine($"Opdaterer nr 2. Det Lykkedes? {Put(2, new Hotel(2, "D'Angleterre", "Nordhavn nr 9", "28941324", "reception@brevpost.com"))}");
-            }
+                Console.WriteLine("Se alle de nye hoteller!");
+                Console.WriteLine(GetAll());
+        }
 
             private List<Hotel> GetAll()
             {

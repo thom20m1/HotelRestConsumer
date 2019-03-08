@@ -13,10 +13,17 @@ namespace HotelRestConsumer
         
         static void Main(string[] args)
         {
-            HotelCode HotelCode = new HotelCode();
-            HotelCode.DoTheStuff();
+            HotelCode hotelCode = new HotelCode();
+            GuestCode guestCode = new GuestCode("Guests");
+            RoomCode roomCode = new RoomCode("Rooms");
+            BookingCode bookingCode = new BookingCode("Bookings");
+            FacilityCode facilityCode = new FacilityCode("Facilities");
 
-
+            hotelCode.DoTheStuff();
+            guestCode.DoTheStuff();
+            roomCode.DoTheStuff();
+            bookingCode.DoTheStuff();
+            facilityCode.DoTheStuff();
 
             KeepConsoleWindowOpen();
         }
